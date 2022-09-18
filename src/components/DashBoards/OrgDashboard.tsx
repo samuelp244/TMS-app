@@ -88,13 +88,13 @@ const OrgDashboard = (props:dashboardProps) => {
   };
 
 
-  const getEmployees = (e:any) =>{
-    e.preventDefault();
-    Axios.get(`http://localhost:1337/api/v1/getAllEmployees?username=${location.state.username}`).then((res)=>{
-      console.log(res);
-      // setEmpList(res.data.employees);
-    })
-  }
+  // const getEmployees = (e:any) =>{
+  //   e.preventDefault();
+  //   Axios.get(`http://localhost:1337/api/v1/getAllEmployees?username=${location.state.username}`).then((res)=>{
+  //     console.log(res);
+  //     // setEmpList(res.data.employees);
+  //   })
+  // }
   
 
   useEffect(()=>{
