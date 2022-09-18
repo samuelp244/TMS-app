@@ -13,7 +13,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import { ProtectedRoute } from './components/forms/CustomerForms/ProtectedRoute';
+// import { ProtectedRoute } from './components/forms/CustomerForms/ProtectedRoute';
 
 function App() {
   const [userLoggedIn,setUserLoggedIn] = useState(false);
