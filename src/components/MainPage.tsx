@@ -11,6 +11,9 @@ const MainPage = () => {
   return (
     <div className="main-page">
       {/* <NavBar /> */}
+      <div className=" text-3xl  font-semibold">
+        <h1 className="text-purple-500">Ticketeasy</h1>
+      </div>
       <div className="content"></div>
       <div className="content-div">
         
