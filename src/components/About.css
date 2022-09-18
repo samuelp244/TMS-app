@@ -1,0 +1,9 @@
+.about{
+    font-size: xx-large;
+    color: rgb(199, 199, 199);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,0 +1,84 @@
+.form_controls{
+    display:flex;
+}
+
+.add-btn{
+    font-size: 1.5rem;
+    right:3rem;
+    width: max-content;
+    height:3rem;
+    padding: 3px;
+}
+
+.add-btn:hover{
+    scale: 1.1;
+    transition:0.3s;
+}
+
+button:hover{
+    scale: 1.1;
+    transition:0.3s;
+}
+
+.employee-container{
+    border: 1px solid blue;
+    border-radius: 6px;
+    margin: 2rem;
+    padding: 1rem;
+    
+}
+
+.employee_list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.employee_card{
+    border: none;
+    background-color: rgb(113, 162, 236);
+    color: white;
+    padding: 0.4rem;
+    margin: 0.7rem;
+    width: 20rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee_buttons button{
+    width: max-content;
+    font-size: 1.3rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.employee_header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.employee_count{
+    background-color: rgb(28, 119, 255);
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.features{
+    display: flex;
+}
+
+
+.orgdash_header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,55 @@
+form{
+    margin:auto;
+    margin-top: 7rem;
+    padding: 3rem 5rem;
+    
+    border: 1px solid rgb(39, 119, 240);
+    border-radius: 10px;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;   
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+
+button{
+    margin: auto;
+    margin-top: 20px;
+    width: 5rem;
+    height: 1.7rem;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background-color: rgb(39, 119, 240);
+    border: none;
+    cursor: pointer;
+    
+}
+
+input{
+    border: 1px solid rgb(39, 119, 240);
+    height: 1.7rem;
+    border-radius: 4px;
+}
+
+p{
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+h1{
+    text-align: center;
+    color: rgb(28, 119, 255);
+}
+
+small{
+    font-size: 0.7rem;
+    text-align: center;
+    color:rgb(255, 0, 0);
+}
