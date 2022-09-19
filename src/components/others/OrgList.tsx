@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import './OrgList.css'
+import { BASE_URL } from "../../api/apiCalls";
 
 export interface orgListProps {
   orgButtonHandler: (orgName: string) => void;
@@ -11,7 +12,7 @@ const OrgList = (props: orgListProps) => {
   
 
   useEffect(() => {
-    Axios.get("http://localhost:1337/api/v1/getOrganizationsList").then(
+    Axios.get(`${BASE_URL}/v1/getOrganizationsList`).then(
       (res) => {
         setOrgList(res.data.organizations);
       }
