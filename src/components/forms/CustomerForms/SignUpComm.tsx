@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./SignUpComm.css";
 import { Link, useNavigate } from "react-router-dom";
 import Axios from "axios";
+import { BASE_URL } from "../../../api/apiCalls";
 
 const SignUpComm = () => {
   const [userName, setUserName] = useState("");
@@ -16,7 +17,7 @@ const SignUpComm = () => {
     e.preventDefault();
     if (password === confPassword) {
       console.log("passed");
-      Axios.post("http://localhost:1337/api/v1/registerCustomer", {
+      Axios.post(`${BASE_URL}/v1/registerCustomer`, {
         username: userName,
         email: email,
         phone: phone,
