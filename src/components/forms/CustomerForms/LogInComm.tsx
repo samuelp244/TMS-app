@@ -21,7 +21,7 @@ const LogInComm = (props:loginProps) => {
       email: email,
       password: password,
     }).then(async(res) => {
-      
+      console.log(res)
       if (res.statusText === "OK") {
 
         if (res.data.status === "ok" && res.data.user === true) {
