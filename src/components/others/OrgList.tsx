@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-import './OrgList.css'
 import { BASE_URL } from "../../api/apiCalls";
 
 export interface orgListProps {

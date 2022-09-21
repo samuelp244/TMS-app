@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation, useNavigate} from "react-router-dom";
 import Axios from "axios";
-import "./OrgDashBoard.css";
+
 import {CgProfile} from "react-icons/cg"
 import {AiOutlineSetting} from "react-icons/ai"
+import { BASE_URL } from "../../api/apiCalls";
 
 
 export interface locationState{
@@ -63,7 +64,7 @@ const OrgDashboard = (props:dashboardProps) => {
 
   const submitHandler = (e: any) => {
     e.preventDefault();
-    Axios.post("http://localhost:1337/api/v1/addEmployee", {
+    Axios.post(`${BASE_URL}/v1/addEmployee`, {
       username: userName,
       rootUser: location.state.username,
       assignedDomain: dom,

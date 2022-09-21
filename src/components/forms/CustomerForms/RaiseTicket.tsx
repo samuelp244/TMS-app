@@ -1,5 +1,6 @@
 import Axios from "axios";
 import React, { useState } from "react";
+import { BASE_URL } from "../../../api/apiCalls";
 
 
 export interface orgNameProps{
@@ -14,7 +15,7 @@ const RaiseTicket = (props:orgNameProps) => {
 
   const submitHandler = (e: any) => {
     e.preventDefault();
-    Axios.post("http://localhost:1337/api/v1/addNewTicket",{
+    Axios.post(`${BASE_URL}/v1/addNewTicket`,{
       organizationName:props.orgName,
       category:cat,
       username:props.username,

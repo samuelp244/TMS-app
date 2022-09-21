@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./LoginOrg.css";
+
 import { Link, useNavigate } from "react-router-dom";
 import Axios from "axios";
+import { BASE_URL } from "../../../api/apiCalls";
 
 interface loginProps{
   loggedIn:()=>Promise<any>;
@@ -17,7 +18,7 @@ const LogInOrg = (props:loginProps) => {
   const submitHandler = (e: any) => {
     e.preventDefault();
 
-    Axios.post("http://localhost:1337/api/v1/loginUser", {
+    Axios.post(`${BASE_URL}/v1/loginUser`, {
       email: email,
       password: password,
     }).then((res) => {

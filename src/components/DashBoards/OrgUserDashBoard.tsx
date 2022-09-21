@@ -3,7 +3,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {CgProfile} from "react-icons/cg"
-import './EmployeeDashboard.css'
+import { BASE_URL } from "../../api/apiCalls";
+
 
 export interface locationState {
   state: {
@@ -33,7 +34,7 @@ const OrgUserDashBoard = (props:dashboardProps) => {
   console.log(location.state);
   useEffect(() => {
     Axios.get(
-      `http://localhost:1337/api/v1/getAllTickets?username=${location.state.username}`
+      `${BASE_URL}/v1/getAllTickets?username=${location.state.username}`
     ).then((res) => {
       console.log(res);
       setTickets(res.data.tickets);
@@ -48,7 +49,7 @@ const OrgUserDashBoard = (props:dashboardProps) => {
 
   const acceptHandler = (id: string) => {
     Axios.get(
-      `http://localhost:1337/api/v1/acceptTicket?id=${id}&username=${location.state.username}`
+      `${BASE_URL}/v1/acceptTicket?id=${id}&username=${location.state.username}`
     ).then((res) => {
       setTickets(res.data.tickets);
     });
@@ -56,7 +57,7 @@ const OrgUserDashBoard = (props:dashboardProps) => {
 
   const closeHandler = (id: string) => {
     Axios.get(
-      `http://localhost:1337/api/v1/closeTicketEmployee?id=${id}&username=${location.state.username}`
+      `${BASE_URL}/v1/closeTicketEmployee?id=${id}&username=${location.state.username}`
     ).then((res) => {
       setTickets(res.data.tickets);
     });
