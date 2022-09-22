@@ -4,8 +4,9 @@ import OrgList from "../others/OrgList";
 import { useLocation,useNavigate } from "react-router-dom";
 import Axios from "axios";
 import { CgProfile } from "react-icons/cg";
+import { BASE_URL } from "../../api/apiCalls";
 
-import "./CommDashboard.css";
+
 
 export interface locationState {
   state: {
@@ -54,14 +55,14 @@ const CommDashBoard = (props:dashboardProps) => {
 
   useEffect(() => {
     Axios.get(
-      `http://localhost:1337/api/v1/getUserTickets?username=${location.state?.username}`
+      `${BASE_URL}/v1/getUserTickets?username=${location.state?.username}`
     ).then((res) => {
       setTickets(res.data.tickets);
     });
   }, [location, selectedOrg]);
 
   const closeButtonHandler = (id: string) => {
-    Axios.get(`http://localhost:1337/api/v1/closeCustomerTicket?id=${id}`).then(
+    Axios.get(`${BASE_URL}/v1/closeCustomerTicket?id=${id}`).then(
       (res) => {
         console.log(res.data);
         setTickets(res.data.tickets);
@@ -72,7 +73,7 @@ const CommDashBoard = (props:dashboardProps) => {
   const profileEditHandler = (e: any) => {
     e.preventDefault();
     // console.log(Obj)
-    Axios.put("http://localhost:1337/api/v1/editCustomer", {
+    Axios.put(`${BASE_URL}/v1/editCustomer`, {
       username: location.state?.username, //fixed
       email: newEmail,
       phone: newPhone,

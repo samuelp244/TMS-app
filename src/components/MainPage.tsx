@@ -2,24 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import Footer from "./Footer";
 // import NavBar from "./NavBar";
-import "./MainPage.css";
+
 // import { ReactSVG } from "react";
 
 
 const MainPage = () => {
   
   return (
-    <div className="main-page">
+    <div className="w-full h-screen text-white flex flex-col text-4xl justify-center items-center">
       {/* <NavBar /> */}
-      <div className=" text-3xl  font-semibold">
-        <h1 className="text-purple-500">Ticketeasy</h1>
-      </div>
-      <div className="content"></div>
-      <div className="content-div">
+
+      
+      <div className=" bg-slate-400 m-5 mb-2 w-1/2 h-60 text-center align-middle rounded-md flex justify-center items-center">
         
         <Link to="/login">Individual LogIn</Link>
       </div>
-      <div className="content-div">
+      <div className=" bg-slate-400 m-5 mt-2 w-1/2 h-60 text-center align-middle rounded-md flex justify-center items-center">
         <Link to="/orglogin">Organization Login</Link>
         
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {CgProfile} from "react-icons/cg"
-import './EmployeeDashboard.css'
+
 
 export interface locationState {
   state: {

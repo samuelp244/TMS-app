@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate} from "react-router-dom";
 import Axios from "axios";
-import "./OrgDashBoard.css";
+
 import {CgProfile} from "react-icons/cg"
 import {AiOutlineSetting} from "react-icons/ai"
 
