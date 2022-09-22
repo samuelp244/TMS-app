@@ -11,7 +11,7 @@ import SignUpOrg from './components/forms/RootUserForms/SignUpOrg';
 import MainPage from './components/MainPage';
 import About from './components/About';
 import Contact from './components/Contact';
-import NavBar from './components/NavBar';
+// import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 // import { ProtectedRoute } from './components/forms/CustomerForms/ProtectedRoute';
 
