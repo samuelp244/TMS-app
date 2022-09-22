@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import CommDashBoard from './components/DashBoards/CommDashBoard';
 import OrgDashboard from './components/DashBoards/OrgDashboard';
