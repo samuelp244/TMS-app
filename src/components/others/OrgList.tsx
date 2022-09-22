@@ -22,7 +22,7 @@ const OrgList = (props: orgListProps) => {
     <>
     
       {orgList?.length!==0?orgList?.map((org) => (
-        <div key={org} className="">
+        <div key={org} className="m-2 p-2 w-52 h-36 text-center flex justify-center text-2xl text-white bg-slate-700 rounded-md">
           <button onClick={() => {
             props.orgButtonHandler(org);
           }}>{org}</button>
