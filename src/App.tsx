@@ -16,16 +16,16 @@ import Footer from './components/Footer';
 // import { ProtectedRoute } from './components/forms/CustomerForms/ProtectedRoute';
 
 function App() {
-  const [userLoggedIn,setUserLoggedIn] = useState(false);
+  // localStorage.setItem("userLoggedIn",JSON.stringify(false))
+  // const [userLoggedIn,setUserLoggedIn] = useState(false);
 
-  useEffect(()=>{
-    localStorage.setItem("userLoggedIn",JSON.stringify(userLoggedIn))
-  },[userLoggedIn])
+  // useEffect(()=>{
+    
+  // },[userLoggedIn])
 
-  const loggedIn = async() => {
-    await setUserLoggedIn(true);
-  };
-  const loggedOut = () => setUserLoggedIn(false)
+  const loggedIn = () => localStorage.setItem("userLoggedIn",JSON.stringify(true));
+
+  const loggedOut = () => localStorage.setItem("userLoggedIn",JSON.stringify(false));
   return (
     <div className="">
       <Router>

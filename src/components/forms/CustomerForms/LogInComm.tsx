@@ -5,7 +5,7 @@ import Axios from "axios";
 import { BASE_URL } from "../../../api/apiCalls";
 
 interface loginProps {
-  loggedIn: () => Promise<any>;
+  loggedIn: () => void;
 }
 
 const LogInComm = (props: loginProps) => {
