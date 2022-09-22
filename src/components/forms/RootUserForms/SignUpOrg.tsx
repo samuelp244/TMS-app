@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 import Axios from "axios";
+import { BASE_URL } from "../../../api/apiCalls";
 
 const SignUpOrg = () => {
   const [userName, setUserName] = useState("");
@@ -15,7 +16,7 @@ const SignUpOrg = () => {
   const submitHandler = (e: any) => {
     e.preventDefault();
     if (password === confPassword) {
-      Axios.post(" http://localhost:1337/api/v1/registerRootUser", {
+      Axios.post(`${BASE_URL}/v1/registerRootUser`, {
         username: userName,
         organization: organization,
         email: email,
