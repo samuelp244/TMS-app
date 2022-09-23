@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Footer from "./Footer";
+
 import NavBar from "./NavBar";
 
 // import { ReactSVG } from "react";
@@ -14,15 +14,15 @@ const MainPage = () => {
       <NavBar/>
 
       
-      <div className=" bg-slate-400 mt-20 m-5 w-1/2 h-60 text-center align-middle rounded-md flex justify-center items-center">
+      <div className=" bg-slate-400 mt-40 m-5 w-1/2 h-72 text-center align-middle rounded-md flex justify-center items-center">
         
         <Link to="/login">Individual LogIn</Link>
       </div>
-      <div className=" bg-slate-400 m-5 mt-2 w-1/2 h-60 text-center align-middle rounded-md flex justify-center items-center">
+      <div className=" bg-slate-400 m-5 mt-2 w-1/2 h-72 text-center align-middle rounded-md flex justify-center items-center">
         <Link to="/orglogin">Organization Login</Link>
         
       </div>
-      {/* <Footer /> */}
+      
     </div>
   );
 };

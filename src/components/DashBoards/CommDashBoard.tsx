@@ -162,7 +162,7 @@ const CommDashBoard = (props: dashboardProps) => {
           </div>
           <h3>Tickets:</h3>
 
-          <div className=" m-3 w-auto rounded-md p-5 bg-slate-600 flex justify-between">
+          <div className=" m-3 w-auto rounded-md p-5 bg-slate-600 flex justify-evenly">
             <div className=" bg-slate-400 rounded-md w-96">
               <div className=" flex justify-between p-2">
                 <div>Active Tickets</div>
@@ -178,13 +178,13 @@ const CommDashBoard = (props: dashboardProps) => {
                 tickets
                   ?.filter((obj) => obj.status === "Active")
                   .map((val) => (
-                    <div className="ticket_div">
+                    <div className="m-3 bg-slate-600 text-white p-2 rounded-md flex justify-between">
                       Company-{val.organizationName}
                       <br />
                       Category-{val.category}
                       <br />
                       query-{val.query}
-                      <div className="ticket_buttons">
+                      <div className="">
                         <button onClick={() => closeButtonHandler(val._id)}>
                           close
                         </button>
@@ -210,7 +210,7 @@ const CommDashBoard = (props: dashboardProps) => {
                 tickets
                   ?.filter((obj) => obj.status === "Accepted")
                   .map((val) => (
-                    <div className="ticket_div">
+                    <div className="m-3 bg-slate-600 text-white p-2 rounded-md flex justify-between">
                       Company-{val.organizationName}
                       <br />
                       Category-{val.category}
@@ -243,7 +243,7 @@ const CommDashBoard = (props: dashboardProps) => {
                 tickets
                   ?.filter((obj) => obj.status === "closed")
                   .map((val) => (
-                    <div className="ticket_div">
+                    <div className="m-3 bg-slate-600 text-white p-2 rounded-md flex justify-between">
                       Company-{val.organizationName}
                       <br />
                       Category-{val.category}
