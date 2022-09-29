@@ -9,7 +9,7 @@ import NavBar from "./NavBar";
 const MainPage = () => {
   
   return (
-    <div className="w-full h-screen text-white flex flex-col text-4xl justify-between items-center">
+    <div className="w-full h-full text-white flex flex-col text-4xl justify-between items-center">
       {/* <NavBar /> */}
       <NavBar/>
 

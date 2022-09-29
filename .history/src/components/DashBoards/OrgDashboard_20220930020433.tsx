@@ -241,7 +241,7 @@ const OrgDashboard = (props:dashboardProps) => {
           </div>
           <hr />
           {tickets?.filter(obj=>obj.status === "Active").length !== 0?tickets?.filter(obj=>obj.status === "Active").map((val)=>
-            <div className='m-3 bg-slate-600 text-white p-2 rounded-md flex justify-between' key={val._id}>Company-{val.organizationName}<br/>
+            <div className='ticket_div' key={val._id}>Company-{val.organizationName}<br/>
             Category-{val.category}<br/>
             query-{val.query}
             </div>
