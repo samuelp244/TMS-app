@@ -87,7 +87,7 @@ const CommDashBoard = (props: dashboardProps) => {
   return (
     <>
       {localStorage.getItem("userLoggedIn") === "true" ? (
-        <div className="h-screen">
+        <div >
           <div className="w-full h-20 items-center flex flex-row justify-between bg-gray-300">
             <div className="text-4xl">TICKET.EASY</div>
             <h4 className="flex gap-5">

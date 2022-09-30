@@ -123,13 +123,12 @@ const OrgDashboard = (props:dashboardProps) => {
     <>{
       (localStorage.getItem("userLoggedIn")==="true")?
     <div className="h-screen">
-      <div className="w-full h-20 items-center flex flex-row justify-between bg-gray-300">
-      <div className="text-4xl">TICKET.EASY</div>
-      <h4 className="flex gap-5"><CgProfile/>  {location.state.username}
-      <button className="p-1 bg-slate-500 rounded-xl text-white" onClick={()=>{
-          LogoutHandler()
-          }}>Logout</button>
-      </h4>
+      <div className="orgdash_header">
+        
+        <h2><CgProfile/>  {location.state.username}</h2>
+        <button onClick={()=>{
+            LogoutHandler()
+            }}>Logout</button>
       </div>
 
       <div className="">
@@ -230,28 +229,28 @@ const OrgDashboard = (props:dashboardProps) => {
 
 
       <h2>Tickets:</h2>
-      <div className=' m-3 w-auto rounded-md p-5 bg-slate-600 flex justify-evenly'>
+      <div className='tickets_container'>
         
-        <div className="bg-slate-400 rounded-md w-96">
-          <div className="flex justify-between p-2">
+        <div className="active_tickets">
+          <div className="ticket_header">
             <div>Active Tickets</div>
-            <div className=" bg-slate-600 p-1 rounded-lg text-white">
+            <div className="ticket_count">
               {tickets?.filter((obj) => obj.status === "Active").length}
             </div>
           </div>
           <hr />
           {tickets?.filter(obj=>obj.status === "Active").length !== 0?tickets?.filter(obj=>obj.status === "Active").map((val)=>
-            <div className='m-3 bg-slate-600 text-white p-2 rounded-md flex justify-between' key={val._id}>Company-{val.organizationName}<br/>
+            <div className='ticket_div' key={val._id}>Company-{val.organizationName}<br/>
             Category-{val.category}<br/>
             query-{val.query}
             </div>
           ):<p>none found</p>}
         </div>
 
-        <div className="bg-slate-400 rounded-md w-96">
-          <div className="flex justify-between p-2">
+        <div className="active_tickets">
+          <div className="ticket_header">
             <div>Accepted Tickets</div>
-            <div className=" bg-slate-600 p-1 rounded-lg text-white">
+            <div className="ticket_count">
               {tickets?.filter((obj) => obj.status === "Accepted").length}
             </div>
           </div>
@@ -264,10 +263,10 @@ const OrgDashboard = (props:dashboardProps) => {
           ):<p>none found</p>}
         </div>
 
-        <div className="bg-slate-400 rounded-md w-96">
-          <div className="flex justify-between p-2">
+        <div className="active_tickets">
+          <div className="ticket_header">
             <div>Closed Tickets</div>
-            <div className=" bg-slate-600 p-1 rounded-lg text-white">
+            <div className="ticket_count">
               {tickets?.filter((obj) => obj.status === "closed").length}
             </div>
           </div>
