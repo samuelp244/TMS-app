@@ -29,7 +29,7 @@ const RaiseTicket = (props:orgNameProps) => {
   };
 
   return (
-    <form onSubmit={submitHandler} className="bg-slate-400 absolute left-1/2 z-20 p-5 rounded-md flex flex-col gap-3 justify-center items-center">
+    <form onSubmit={submitHandler} className="bg-slate-400 absolute left-1/2 z-20 p-10 rounded-md flex flex-col gap-3 justify-center items-center">
       <h1 className="text-xl ">{props.orgName} Ticket Form</h1>
       <div className="details flex flex-col gap-3 justify-center items-center">
         <div>

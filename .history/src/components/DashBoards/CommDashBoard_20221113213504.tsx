@@ -166,7 +166,7 @@ const CommDashBoard = (props: dashboardProps) => {
             <div className=" bg-slate-400 rounded-md w-96">
               <div className=" flex justify-between p-2">
                 <div>Active Tickets</div>
-                <div className=" bg-slate-600 p-1 rounded-full text-white">
+                <div className=" bg-slate-600 p-2 rounded-lg text-white">
                   {tickets?.filter((obj) => obj.status === "Active").length}
                 </div>
               </div>
