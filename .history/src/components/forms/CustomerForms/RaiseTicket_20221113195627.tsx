@@ -29,14 +29,14 @@ const RaiseTicket = (props:orgNameProps) => {
   };
 
   return (
-    <form onSubmit={submitHandler} className="bg-slate-400 absolute left-1/2 z-20 p-5 rounded-md flex flex-col gap-3 justify-center items-center">
-      <h1 className="text-xl ">{props.orgName} Ticket Form</h1>
-      <div className="details flex flex-col gap-3 justify-center items-center">
+    <form onSubmit={submitHandler} className="bg-slate-400 absolute left-1/2 z-20 p-10 rounded-md">
+      <h1 className="text ">{props.orgName} Ticket Form</h1>
+      <div className="details">
         <div>
           <label>select category: </label>
           <select name="category" id="" value={cat} onChange={(e: any) =>{
              setCat(e.target.value);
-          }} >
+          }}>
             <option value="tech">Technical</option>
             <option value="howto">How To</option>
             <option value="feature">Feature Request</option>
@@ -53,8 +53,8 @@ const RaiseTicket = (props:orgNameProps) => {
         />
       </div>
       <div className="form_controls">
-        <button type="submit" className="mb-10 bg-gray-600 py-1 px-3 rounded-md text-white font-semibold hover:scale-125 hover:bg-slate-500">Submit</button>
-        <button className="mb-10 bg-gray-600 py-1 px-3 rounded-md text-white font-semibold hover:scale-125 hover:bg-slate-500">Cancel</button>
+        <button type="submit">Submit</button>
+        <button>Cancel</button>
       </div>
       
     </form>
