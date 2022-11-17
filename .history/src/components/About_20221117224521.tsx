@@ -6,13 +6,9 @@ const About = () => {
     <div className="about h-screen">
       <NavBar/>
       About:
-      <br />
       Creators:
-      <br />
       Hanish Koushik
-      <br />
-      Samuel
-
+      
     </div>
   )
 }

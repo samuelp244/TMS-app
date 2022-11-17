@@ -3,16 +3,8 @@ import NavBar from './NavBar'
 
 const About = () => {
   return (
-    <div className="about h-screen">
+    <div className="about h-">
       <NavBar/>
-      About:
-      <br />
-      Creators:
-      <br />
-      Hanish Koushik
-      <br />
-      Samuel
-
     </div>
   )
 }
