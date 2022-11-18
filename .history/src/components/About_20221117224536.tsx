@@ -11,7 +11,6 @@ const About = () => {
       <br />
       Hanish Koushik
       <br />
-      Samuel
 
     </div>
   )

@@ -8,10 +8,9 @@ const About = () => {
       About:
       <br />
       Creators:
-      <br />
+      br
       Hanish Koushik
       <br />
-      Samuel
 
     </div>
   )
