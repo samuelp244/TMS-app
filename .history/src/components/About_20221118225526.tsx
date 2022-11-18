@@ -13,7 +13,7 @@ const About = () => {
       <br />
       Samuel P
       <br/>
-      Details:
+      
 
     </div>
   )
