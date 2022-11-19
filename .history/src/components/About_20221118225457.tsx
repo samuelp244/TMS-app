@@ -12,8 +12,6 @@ const About = () => {
       Hanish Koushik N
       <br />
       Samuel P
-      <br/>
-      Details:
 
     </div>
   )

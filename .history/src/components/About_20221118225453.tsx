@@ -9,11 +9,9 @@ const About = () => {
       <br />
       Creators:
       <br />
-      Hanish Koushik N
+      Hanish Koushik
       <br />
-      Samuel P
-      <br/>
-      Details:
+      Samuel 
 
     </div>
   )
